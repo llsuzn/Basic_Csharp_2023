@@ -12,7 +12,7 @@ namespace cs09_NullCondition
         {
             Foo myFoo = null;
             /*
-            int? bar;
+            int? bar; // null값을 받을 수 있는 변수 생성(int?)
             if(myFoo != null)
             {
                 bar = myFoo.member;
