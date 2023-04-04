@@ -23,6 +23,7 @@ namespace cs09_NullCondition
             }*/
             // 위의 주석부분을 한줄로 줄인 코드
             int? bar = myFoo?.member;
+            Console.WriteLine(bar);
         }
     }
 }
