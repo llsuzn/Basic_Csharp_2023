@@ -191,7 +191,7 @@ namespace wf03_property
 
         private void BtnLoad_Click(object sender, EventArgs e)
         {
-            PcbDummy.Image = Bitmap.FromFile("cat.png");
+            PcbDummy.Image = Bitmap.FromFile("cream.png");
         }
 
         private void PcbDummy_Click(object sender, EventArgs e)

@@ -83,6 +83,9 @@
     <Content Include="cat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="cream.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="obj\cat.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
