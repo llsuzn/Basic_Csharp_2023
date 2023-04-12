@@ -20,8 +20,20 @@ namespace wf11_mdiTest
             InitializeComponent();
         }
 
+        [Obsolete("OldMethod는 다음 버전에서 페기됩니다. NewMethod를 이용하세요.")]
+        private void OldMethod()
+        {
+            Console.WriteLine("올드 메소드!");
+        }
+
+        private void NewMethod()
+        {
+            // ......
+        }
+
         private void MniForm1_Click(object sender, EventArgs e)
         {
+            OldMethod();
             child1 = new FrmChild1();
             child1.TopLevel = false;
             this.Controls.Add(child1);
