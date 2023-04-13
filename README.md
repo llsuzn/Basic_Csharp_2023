@@ -65,9 +65,14 @@
 	- DB핸들링
 	- SDI vs MDI
 	
-	
+## 8일차
+- C# 기본
+	- 파일 핸들링
+	- 스레드 / 태스크
+	- 가비지 컬렉션
+- WinApp
+	- 메모장 만들기
 	- BookRentalShop DB 사용 WimForms앱 개발
-	- 실습 예제
-	
+메모장 만들기 실행결과		
 	
 	
