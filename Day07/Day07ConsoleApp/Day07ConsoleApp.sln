@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs28_event", "cs28_event\cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs26_1_Reflection", "cs26_1_Reflection\cs26_1_Reflection.csproj", "{9EEB206D-48A2-448B-BAB5-757465E4290B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs26_branch", "cs26_branch\cs26_branch.csproj", "{0B2ABF04-6FB6-4F2C-A9C1-6F481E4106C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9EEB206D-48A2-448B-BAB5-757465E4290B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EEB206D-48A2-448B-BAB5-757465E4290B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EEB206D-48A2-448B-BAB5-757465E4290B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B2ABF04-6FB6-4F2C-A9C1-6F481E4106C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B2ABF04-6FB6-4F2C-A9C1-6F481E4106C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B2ABF04-6FB6-4F2C-A9C1-6F481E4106C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B2ABF04-6FB6-4F2C-A9C1-6F481E4106C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

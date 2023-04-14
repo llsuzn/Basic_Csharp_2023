@@ -68,11 +68,23 @@
 ## 8일차
 - C# 기본
 	- 파일 핸들링
-	- 스레드 / 태스크
-	- 가비지 컬렉션
+	- 윈폼 메모장( 파일핸들링 )
 - WinApp
 	- 메모장 만들기
 	- BookRentalShop DB 사용 WimForms앱 개발
+		- WimForms MDI
+		- MySQL.Data Lib DB연동
 메모장 만들기 실행결과		
+
+## 9일차
+- C# 기본
+	- 스레드 / 태스크
+	- 가비지 컬렉션
+- WinApp
+	- BookRentalShop 만들기 계속
 	
+## 10일차
+- WinApp
+	- BookRentalShop 만들기 계속
+- 코딩테스트	
 	
