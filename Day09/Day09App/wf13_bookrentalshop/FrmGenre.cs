@@ -1,13 +1,7 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace wf13_bookrentalshop
@@ -26,6 +20,7 @@ namespace wf13_bookrentalshop
         #region <이벤트 핸들러>
         private void FrmGenre_Load(object sender, EventArgs e)
         {
+            isNew = true; // 신규부터 시작
             RefreshData();
         }
         private void BtnNew_Click(object sender, EventArgs e)
@@ -38,7 +33,7 @@ namespace wf13_bookrentalshop
             SaveData();         //데이터 저장 / 수정
             RefreshData();  //데이터 재조회
             ClearInputs();  //입력창 클리어
-        }
+        } 
         private void BtnDel_Click(object sender, EventArgs e)
         {
             if(isNew == true)       //신규
@@ -54,6 +49,22 @@ namespace wf13_bookrentalshop
             DeleteData();   // 데이터 삭제 처리
             RefreshData();  // 지우고나서 재조회
             ClearInputs();  // 입력창 데이터 지우기
+        }
+        private void DgvResult_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // 그리드뷰 클릭시 발생하는 이벤트
+            if(e.RowIndex > -1) // 아무것도 선택 안하면 -1
+            {
+                var selData = DgvResult.Rows[e.RowIndex];
+                // Debug.WriteLine(selData.ToString());
+                // Debug.WriteLine(selData.Cells[0].Value);
+                // Debug.WriteLine(selData.Cells[1].Value);
+                TxtDivision.Text = selData.Cells[0].Value.ToString();
+                TxtNames.Text = selData.Cells[1].Value.ToString();
+                TxtDivision.ReadOnly = true;        // PK 수정안되도록
+
+                isNew = false;      //수정
+            }
         }
 
         #endregion
@@ -207,22 +218,6 @@ namespace wf13_bookrentalshop
             catch (Exception ex)
             {
                 MessageBox.Show($"비정상적인 오류 : {ex.Message}", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-        private void DgvResult_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // 그리드뷰 클릭시 발생하는 이벤트
-            if(e.RowIndex > -1) // 아무것도 선택 안하면 -1
-            {
-                var selData = DgvResult.Rows[e.RowIndex];
-                // Debug.WriteLine(selData.ToString());
-                Debug.WriteLine(selData.Cells[0].Value);
-                Debug.WriteLine(selData.Cells[1].Value);
-                TxtDivision.Text = selData.Cells[0].Value.ToString();
-                TxtNames.Text = selData.Cells[1].Value.ToString();
-                TxtDivision.ReadOnly = true;
-
-                isNew = false;      //수정
             }
         }
 
