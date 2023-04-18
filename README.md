@@ -85,6 +85,5 @@
 	
 ## 10일차
 - WinApp
-	- BookRentalShop 만들기 계속
-- 코딩테스트	
+	- BookRentalShop 프로그램
 	
