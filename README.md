@@ -20,7 +20,8 @@
 - WinForms 컨트롤
 	- WinForms 컨트롤
 	- 리스트뷰, 데이터 그리드 추가학습
-3일차 윈폼 학습결과	
+	<img src="https://github.com/llsuzn/Basic_Csharp_2023/blob/main/image/image1.png" width=600 />
+	<img src="https://github.com/llsuzn/Basic_Csharp_2023/blob/main/image/image2.png" width=600 />
 	
 ## 4일차
 - C# 기본
@@ -73,8 +74,7 @@
 	- 메모장 만들기
 	- BookRentalShop DB 사용 WimForms앱 개발
 		- WimForms MDI
-		- MySQL.Data Lib DB연동
-메모장 만들기 실행결과		
+		- MySQL.Data Lib DB연동	
 
 ## 9일차
 - C# 기본
